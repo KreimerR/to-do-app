@@ -1,4 +1,162 @@
-* {
-    margin: 0;
-    padding: 0;
+@import "_resets";
+@import "_variables";
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    @include flexCenter();
+    background-color: #f8f8ff;
+    font-family: "Rubik", sans-serif;
+    height: 100vh;
+}
+
+button {
+    font-family: "Rubik", sans-serif;
+}
+
+.to-do-app {
+    width: auto;
+    height: auto;
+}
+
+.name {
+    @include flexCenter();
+    color: $gray-text;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+div .active {
+    background-color: darken($gray, 5);
+
+    &:hover {
+        background-color: darken($gray, 10);
+    }
+}
+
+.main-btn {
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sort-btn {
+    background-color: $gray;
+    color: $gray-second-text;
+
+    &:hover {
+        background-color: darken($gray, 5);
+    }
+}
+
+.all,
+.pending {
+    margin-right: 10px;
+}
+
+.task {
+    @include flexCenter();
+    margin-right: auto;
+    background-color: $blue;
+    color: white;
+
+    &:hover {
+        background-color: darken($blue, 5);
+    }
+}
+
+.tasks-container {
+    @include flexCenter();
+    background-color: $gray;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+
+    .task-container {
+        display: flex;
+        background-color: white;
+        width: 700px;
+        height: 70px;
+        border-radius: 10px;
+    }
+
+    .left-task-container {
+        margin-right: auto;
+        @include flexCenter();
+
+        .check {
+            width: 30px;
+            height: 30px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .unchecked {
+            background-color: $gray-btn;
+
+            &:hover {
+                background-color: darken($gray-btn, 5);
+            }
+        }
+
+        .checked {
+            @include flexCenter();
+            padding-top: 3px;
+            background-color: $blue;
+
+            &:hover {
+                background-color: darken($blue, 5);
+            }
+        }
+
+        .info-container {
+            h3 {
+                font-weight: 500;
+            }
+
+            color: $gray-second-text;
+        }
+    }
+
+    .right-task-container {
+        @include flexCenter();
+
+        .trash-btn,
+        .edit-btn {
+            @include flexCenter();
+            width: 30px;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            background-color: $gray-btn;
+            margin-right: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($gray-btn, 5);
+            }
+        }
+    }
+}
+
+.icon {
+    width: 17px;
+    height: 17px;
 }
