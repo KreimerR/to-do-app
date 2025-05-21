@@ -262,7 +262,7 @@ div .active {
 
     .info-container {
         h3 {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         p {
@@ -281,6 +281,10 @@ div .active {
     div .task-container {
         max-width: 290px;
         height: 80px;
+    }
+
+    .no-tasks {
+        font-size: 1.2rem;
     }
 }
 
@@ -325,5 +329,9 @@ div .active {
         max-width: 250px;
         max-height: 65px;
         height: 80px;
+    }
+
+    .no-tasks {
+        font-size: 1.1rem;
     }
 }

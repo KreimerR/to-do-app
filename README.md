@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# To-do app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+This is a simple and responsive To-Do application built with React and TypeScript. It allows users to add, edit, delete, mark tasks as completed and sort them by their status (all tasks, pending tasks, completed tasks). The application also persists data using the browser's local storage. Designed as a portfolio project, it demonstrates proficiency in state management, component design, and local data handling in a modern web development environment.
 
-Currently, two official plugins are available:
+## Technologies
+- HTML
+- Sass
+- TypeScript
+- React
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Run
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/KreimerR/to-do-app.git
+   ```
 
-## Expanding the ESLint configuration
+2. Navigate to the project folder:
+   ```bash
+   cd to-do-app
+   ```
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+3. Install npm packages:
+  ```bash
+  npm install
+  ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Features
+- Add new tasks
+- Delete existing tasks
+- Edit task titles
+- Mark tasks as completed or revert to pending
+- Sort tasks by status: all, pending, or completed
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Screenshots
+<img src="./src/assets/screenshots/1.png" alt="1">
+<img src="./src/assets/screenshots/2.png" alt="2">
+<img src="./src/assets/screenshots/3.png" alt="3">
+<img src="./src/assets/screenshots/4.png" alt="4">
+<img src="./src/assets/screenshots/5.png" alt="5">
+<img src="./src/assets/screenshots/6.png" alt="6">
+<img src="./src/assets/screenshots/7.png" alt="7">
+<img src="./src/assets/screenshots/8.png" alt="8">
+<img src="./src/assets/screenshots/9.png" alt="9">
+<img src="./src/assets/screenshots/10.png" alt="10">
+<img src="./src/assets/screenshots/11.png" alt="11">
