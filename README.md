@@ -21,9 +21,9 @@ This is a simple and responsive To-Do application built with React and TypeScrip
    ```
 
 3. Install npm packages:
-  ```bash
-  npm install
-  ```
+   ```bash
+   npm install
+   ```
 
 4. Start the development server:
    ```bash
