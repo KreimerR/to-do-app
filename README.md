@@ -13,6 +13,7 @@ This is a simple and responsive To-Do application built with React and TypeScrip
 You can use this project in one of the following ways:
 
 Option 1: Use the Live Version
+
 Simply open [this link](https://to-do-app-two-wine.vercel.app) in your browser to access the application online
 
 Option 2: Run Locally
